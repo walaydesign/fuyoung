@@ -111,42 +111,5 @@
             }
         }
     }
-    &_detail {
-        max-width: 940px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        &_title {
-            font-size: 32px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            letter-spacing: 0.05em;
-            line-height: 1.6;
-        }
-        .news_list_date {
-            margin-bottom: 50px;
-        }
-        &_subtitle {
-            margin-bottom: 10px;
-            font-size: 18px;
-            font-weight: 600;
-            color: $secondary;
-        }
-        &_content {
-            font-size: 15px;
-            margin-bottom: 30px;
-            letter-spacing: 0.05em;
-            line-height: 1.6;
-            color: $gray;
-        }
-        &_pic {
-            width: 100%;
-            border-radius: 20px;
-            margin-bottom: 30px;
-        }
-        .btn-back {
-            margin-top: 30px;
-        }
-    }
+    
 }
