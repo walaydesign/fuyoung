@@ -37,6 +37,11 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+button, input, textarea {
+    outline: none;
+    border: 0;
+}
+
 .container {
     padding-left: 20px;
     padding-right: 20px;
