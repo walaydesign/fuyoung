@@ -214,6 +214,34 @@ ul {
             background-color: #000;
         }
     }
+    &.border-brown {
+        border: 1px solid $secondary;
+        span {
+            color: $secondary;
+        }
+        .btn_arrow {
+            background-color: $secondary;
+        }
+    }
+    &.size-sm {
+        width: 150px;
+        height: 40px;
+        span {
+            font-size: 16px;
+        }
+        .btn_arrow {
+            right: 7px;
+        }
+        &.btn-back {
+            span {
+                transform: translateX(8px);
+            }
+            .btn_arrow {
+                right: inherit;
+                left: 7px;
+            }
+        }
+    }
     &:hover {
         box-shadow: none;
         background-color: $secondary !important;
@@ -269,6 +297,41 @@ ul {
     @media screen and (max-width: 450px) {
         &_logo {
             width: 100%;
+        }
+    }
+}
+
+.pagination {
+    li {
+        margin: 0 5px;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        font-family: $font-lato;
+        transition: $transition-common;
+        &:hover, &.active {
+            background-color: $secondary;
+            color: #fff;
+        }
+    }
+    &_arrow {
+        svg {
+            width: 60%;
+            path {
+                transition: $transition-common;
+            }
+        }
+        &:hover {
+            svg {
+                path {
+                    stroke: #fff;
+                }
+            }
         }
     }
 }
