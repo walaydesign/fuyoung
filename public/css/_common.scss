@@ -29,6 +29,14 @@ ul {
     margin: 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .container {
     padding-left: 20px;
     padding-right: 20px;
