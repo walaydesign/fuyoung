@@ -1,0 +1,166 @@
+.about {
+    &_intro {
+        padding-bottom: 90px;
+        &_item {
+            margin-bottom: 55px;
+            .row {
+                align-items: center;
+                margin-left: -25px;
+                margin-right: -25px;
+                >div {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+            }
+            &:nth-child(even) {
+                .about_intro {
+                    &_pic {
+                        order: 2;
+                    }
+                    &_text {
+                        order: 1;
+                    }
+                }
+            }
+        }
+        &_pic {
+            >img {
+                width: 100%;
+                border-radius: 20px;
+            }
+        }
+        &_text {
+            margin: 0;
+            color: $gray;
+            letter-spacing: 0.05em;
+            line-height: 1.7;
+        }
+        @media screen and (max-width: 991px) {
+            &_pic {
+                margin-bottom: 20px;
+            }
+            &_item {
+                .row {
+                    margin-left: 0;
+                    margin-right: 0;
+                    >div {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+                &:nth-child(even) {
+                    .about_intro {
+                        &_pic {
+                            order: 1;
+                        }
+                        &_text {
+                            order: 2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &_designer {
+        padding: 100px 0;
+        background-color: #F2F2F2;
+        >.container {
+            max-width: 1000px;
+        }
+        &_item {
+            margin-bottom: 65px;
+            .row {
+                margin-left: -27px;
+                margin-right: -27px;
+                >div {
+                    padding-left: 27px;
+                    padding-right: 27px;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &_pic {
+            >img {
+                width: 100%;
+                border-radius: 20px;
+            }
+        }
+        &_text {
+            // padding-left: 55px;
+            color: $gray;
+        }
+        &_name {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 30px;
+            h2 {
+                width: fit-content;
+                padding: 12px 25px;
+                border-radius: 100px;
+                background-color: $secondary;
+                color: #fff;
+                font-size: 22px;
+                font-weight: 700;
+                margin: 0;
+                letter-spacing: 0.05em;
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: #E6DFD3;
+                top: 50%;
+                left: 0;
+                z-index: -1;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                background-color: $secondary;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+            }
+        }
+        &_intro {
+            margin-bottom: 25px;
+        }
+        &_list {
+            h3 {
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 10px;
+                color: $secondary;
+            }
+            ul {
+                margin-bottom: 20px;
+                li {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+        @media screen and (max-width: 991px) {
+            >.container {
+                max-width: 600px;
+            }
+            &_pic {
+                margin-bottom: 30px;
+            }
+            &_name {
+                position: relative;
+                z-index: 1;
+                margin-bottom: 30px;
+                h2 {
+                    padding: 10px 25px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
