@@ -1150,6 +1150,11 @@ button, input, textarea {
           align-items: center;
 }
 
+.news_list_item:nth-child(even) .news_list_text {
+  padding-left: 0;
+  padding-right: 40px;
+}
+
 .news_list_item:nth-child(even) .row > div:first-child {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;

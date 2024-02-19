@@ -6,6 +6,10 @@
                 align-items: center;
             }
             &:nth-child(even) {
+                .news_list_text {
+                    padding-left: 0;
+                    padding-right: 40px;
+                }
                 .row {
                     >div {
                         &:first-child {
