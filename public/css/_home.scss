@@ -217,15 +217,16 @@
     }
     &-intro {
         background-color: $primary;
-        padding: 100px 0;
         >.container {
             position: relative;
+            padding-top: 100px;
+            padding-bottom: 100px;
         }
         &_pic {
             width: 45%;
             position: absolute;
             left: 0;
-            top: -175px;
+            top: -75px;
         }
         &_text {
             width: 55%;
@@ -248,6 +249,23 @@
                 left: calc(100% - 9px);
             }
         }
+        &_slogan {
+            position: absolute;
+            font-family: $font-lato;
+            font-size: 36px;
+            font-weight: 900;
+            margin: 0;
+            letter-spacing: 0.05em;
+            right: 0;
+            &.top {
+                bottom: 5px;
+                color: #fff;
+            }
+            &.bottom {
+                top: calc(100% + 5px);
+                color: #ecc85b;
+            }
+        }
         @media screen and (max-width: 991px) {
             &_pic {
                 position: static;
@@ -257,6 +275,17 @@
             &_text {
                 width: 100%;
                 padding: 0;
+            }
+        }
+        @media screen and (max-width: 575px) {
+            &_slogan {
+                right: 20px;
+                font-size: 30px;
+            }
+        }
+        @media screen and (max-width: 450px) {
+            &_slogan {
+                font-size: 22px;
             }
         }
         @media screen and (max-width: 370px) {

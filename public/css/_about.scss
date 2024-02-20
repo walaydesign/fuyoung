@@ -163,4 +163,37 @@
             }
         }
     }
+    &_info {
+        padding-top: 100px;
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: $third;
+        }
+        &_list {
+            margin-bottom: 30px;
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 8px;
+                svg {
+                    width: 16px;
+                    margin-right: 8px;
+                    path {
+                        fill: $secondary;
+                    }
+                }
+                span {
+                    font-family: $font-lato;
+                    // font-size: 14px;
+                    color: #515151;
+                    // color: $secondary;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }
