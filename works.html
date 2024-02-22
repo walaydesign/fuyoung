@@ -213,7 +213,9 @@
         $(document).click(function (event) {
             var classufyBoxActive = $(".works_classifyBox_active");
             if (!classufyBoxActive.is(event.target) && classufyBoxActive.has(event.target).length === 0) {
-                $(".works_classifyBox").find("ul").slideUp(300);
+                if($(window).width() < 992) {
+                    $(".works_classifyBox").find("ul").slideUp(300);
+                }
             }
         });
     </script>
