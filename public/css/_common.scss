@@ -278,7 +278,6 @@ button, input, textarea {
     color: #fff;
     &_logo {
         width: 385px;
-        // margin-bottom: 30px;
         margin-right: 50px;
     }
     &_info {
@@ -309,6 +308,13 @@ button, input, textarea {
     @media screen and (max-width: 991px) {
         &_info {
             margin-bottom: 30px;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        &_logo {
+            width: 100%;
+            max-width: 400px;
+            margin-right: 0;
         }
     }
     @media screen and (max-width: 450px) {
@@ -500,6 +506,7 @@ button, input, textarea {
         }
     }
     &_download {
+        margin-top: 30px;
         &_item {
             display: flex;
             align-items: center;

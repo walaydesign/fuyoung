@@ -372,6 +372,14 @@ button, input, textarea {
   }
 }
 
+@media screen and (max-width: 575px) {
+  .footer_logo {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 0;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .footer_logo {
     width: 100%;
@@ -598,6 +606,10 @@ button, input, textarea {
 .detail_swiper_small .swiper-button-prev:hover, .detail_swiper_small .swiper-button-next:hover {
   -webkit-transform: translateY(-50%) scale(1.2);
           transform: translateY(-50%) scale(1.2);
+}
+
+.detail_download {
+  margin-top: 30px;
 }
 
 .detail_download_item {
@@ -961,7 +973,7 @@ button, input, textarea {
   width: 45%;
   position: absolute;
   left: 0;
-  top: -75px;
+  top: 0;
 }
 
 .home-intro_text {
